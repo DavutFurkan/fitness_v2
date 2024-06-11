@@ -1,0 +1,319 @@
+name: fitness_v2
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  smooth_page_indicator: ^1.1.0
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+   - lib/images/
+   - lib/images/abs.png
+   - lib/images/back.png
+   - lib/images/biceps.png
+   - lib/images/calf.png
+   - lib/images/chest.png
+   - lib/images/forearms.png
+   - lib/images/legs.png
+   - lib/images/shoulders.png
+   - lib/images/triceps.png
+   - lib/images/InclineBenchSitUpsPage_image1.jpg
+   - lib/images/InclineBenchSitUpsPage_image2.jpg
+   - lib/images/InclineBenchSitUpsPage_image3.jpg
+   - lib/images/InclineBenchSitUpsPage_image4.jpg
+   - lib/images/hanging_leg_raises_image1.jpg
+   - lib/images/hanging_leg_raises_image2.jpg
+   - lib/images/hanging_leg_raises_image3.jpg
+   - lib/images/Dumbbell_Side_Bends_image1.jpg
+   - lib/images/Dumbbell_Side_Bends_image2.jpg
+   - lib/images/Dumbbell_Side_Bends_image3.jpg
+   - lib/images/Dumbbell_Side_Bends_image4.jpg
+   - lib/images/Crunches_image1.jpg
+   - lib/images/Crunches_image2.jpg
+   - lib/images/Crunches_image3.jpg
+   - lib/images/Sit_Ups_image1.jpg
+   - lib/images/Sit_Ups_image2.jpg
+   - lib/images/Sit_Ups_image3.jpg
+   - lib/images/Sit_Ups_image4.jpg
+   - lib/images/Leg_Raises_image1.jpg
+   - lib/images/Leg_Raises_image2.jpg
+   - lib/images/Leg_Raises_image3.jpg
+   - lib/images/Flat_Bench_image1.jpg
+   - lib/images/Flat_Bench_image2.jpg
+   - lib/images/Flat_Bench_image3.jpg
+   - lib/images/Flat_Bench_image4.jpg
+   - lib/images/Flat_Bench_image5.jpg
+   - lib/images/Dead_Lifts_image1.jpg
+   - lib/images/Dead_Lifts_image2.jpg
+   - lib/images/Dead_Lifts_image3.jpg
+   - lib/images/Dead_Lifts_image4.jpg
+   - lib/images/Dead_Lifts_image5.jpg
+   - lib/images/Chin_Ups_image1.jpg
+   - lib/images/Chin_Ups_image2.jpg
+   - lib/images/Chin_Ups_image3.jpg
+   - lib/images/Last_Pull_Downs_image1.jpg
+   - lib/images/Last_Pull_Downs_image2.jpg
+   - lib/images/Last_Pull_Downs_image3.jpg
+   - lib/images/Seated_Rows_image1.jpg
+   - lib/images/Seated_Rows_image2.jpg
+   - lib/images/Seated_Rows_image3.jpg
+   - lib/images/Seated_Rows_image4.jpg
+   - lib/images/Seated_Rows_image5.jpg
+   - lib/images/One_Arm_Dumbbell_image1.jpg
+   - lib/images/One_Arm_Dumbbell_image2.jpg
+   - lib/images/One_Arm_Dumbbell_image3.jpg
+   - lib/images/Barbell_Shrugs_image1.jpg
+   - lib/images/Barbell_Shrugs_image2.jpg
+   - lib/images/Barbell_Shrugs_image3.jpg
+   - lib/images/Curls_image1.png
+   - lib/images/Curls_image2.png
+   - lib/images/Curls_image3.png
+   - lib/images/Curls_image4.png
+   - lib/images/Barbell_Curls_image1.png
+   - lib/images/Barbell_Curls_image2.png
+   - lib/images/Barbell_Curls_image3.png
+   - lib/images/Barbell_Curls_image4.png
+   - lib/images/Barbell_Curls_image5.png
+   - lib/images/Preacher_Curls_image1.png
+   - lib/images/Preacher_Curls_image2.png
+   - lib/images/Preacher_Curls_image3.png
+   - lib/images/Preacher_Curls_image4.png
+   - lib/images/Hammer_Curls_image1.png
+   - lib/images/Hammer_Curls_image2.png
+   - lib/images/Hammer_Curls_image3.png
+   - lib/images/Hammer_Curls_image4.png
+   - lib/images/Concentration_Curls_image1.png
+   - lib/images/Concentration_Curls_image2.png
+   - lib/images/Concentration_Curls_image3.png
+   - lib/images/Concentration_Curls_image4.png
+   - lib/images/Concentration_Curls_image5.png
+   - lib/images/Reverse_Curls_image1.png
+   - lib/images/Reverse_Curls_image2.png
+   - lib/images/Reverse_Curls_image3.png
+   - lib/images/Reverse_Curls_image4.png
+   - lib/images/Cable_Biceps_image1.png
+   - lib/images/Cable_Biceps_image2.png
+   - lib/images/Cable_Biceps_image3.png
+   - lib/images/Low_Pulley_image1.png
+   - lib/images/Low_Pulley_image2.png
+   - lib/images/Low_Pulley_image3.png
+   - lib/images/Toe_Raises_image1.png
+   - lib/images/Toe_Raises_image2.png
+   - lib/images/Toe_Raises_image3.png
+   - lib/images/One_Leg_Toe_image1.png
+   - lib/images/One_Leg_Toe_image2.png
+   - lib/images/One_Leg_Toe_image3.png
+   - lib/images/Seated_Calf_image1.png
+   - lib/images/Seated_Calf_image2.png
+   - lib/images/Seated_Calf_image3.png
+   - lib/images/Barbell_Calf_image1.png
+   - lib/images/Barbell_Calf_image1.png
+   - lib/images/Barbell_Calf_image2.png
+   - lib/images/Barbell_Calf_image3.png
+   - lib/images/Dumbbell_Calf_image1.png
+   - lib/images/Dumbbell_Calf_image2.png
+   - lib/images/Dumbbell_Calf_image3.png
+   - lib/images/Dumbbell_Calf_Raise_image1.png
+   - lib/images/Dumbbell_Calf_Raise_image2.png
+   - lib/images/Dumbbell_Calf_Raise_image3.png
+   - lib/images/Standing_Barbell_image1.png
+   - lib/images/Standing_Barbell_image2.png
+   - lib/images/Standing_Barbell_image3.png
+   - lib/images/Standing_Dumbbell_image1.png
+   - lib/images/Standing_Dumbbell_image2.png
+   - lib/images/Standing_Dumbbell_image3.png
+   - lib/images/Bench_Presses_image1.png
+   - lib/images/Bench_Presses_image2.png
+   - lib/images/Bench_Presses_image3.png
+   - lib/images/Incline_Presses_image1.png
+   - lib/images/Incline_Presses_image2.png
+   - lib/images/Incline_Presses_image3.png
+   - lib/images/Incline_Presses_image4.png
+   - lib/images/Incline_Dumbbell_image1.png
+   - lib/images/Incline_Dumbbell_image2.png
+   - lib/images/Incline_Dumbbell_image3.png
+   - lib/images/Parallel_Bar_image1.png
+   - lib/images/Parallel_Bar_image2.png
+   - lib/images/Parallel_Bar_image3.png
+   - lib/images/Parallel_Bar_image4.png
+   - lib/images/Cable_Crossover_image1.png
+   - lib/images/Cable_Crossover_image2.png
+   - lib/images/Cable_Crossover_image3.png
+   - lib/images/Dumbbell_Flys_image1.png
+   - lib/images/Dumbbell_Flys_image2.png
+   - lib/images/Dumbbell_Flys_image3.png
+   - lib/images/Dumbbell_Pullovers_image1.png
+   - lib/images/Dumbbell_Pullovers_image2.png
+   - lib/images/Dumbbell_Pullovers_image3.png
+   - lib/images/Dumbbell_Pullovers_image4.png
+   - lib/images/Push_Ups_image1.png
+   - lib/images/Push_Ups_image2.png
+   - lib/images/Push_Ups_image3.png
+   - lib/images/Dumbbel_Press_image1.png
+   - lib/images/Dumbbel_Press_image2.png
+   - lib/images/Dumbbel_Press_image3.png
+   - lib/images/Dumbbel_Press_image4.png
+   - lib/images/Barbell_Bench_image1.png
+   - lib/images/Barbell_Bench_image2.png
+   - lib/images/Barbell_Bench_image3.png
+   - lib/images/Back_Presses_image1.png
+   - lib/images/Back_Presses_image2.png
+   - lib/images/Back_Presses_image3.png
+   - lib/images/Seated_Font_image1.png
+   - lib/images/Seated_Font_image2.png
+   - lib/images/Seated_Font_image3.png
+   - lib/images/Seated_Dumbbell_image1.png
+   - lib/images/Seated_Dumbbell_image2.png
+   - lib/images/Seated_Dumbbell_image3.png
+   - lib/images/Low_Pulley_Lateral_image1.png
+   - lib/images/Low_Pulley_Lateral_image2.png
+   - lib/images/Low_Pulley_Lateral_image3.png
+   - lib/images/Low_Pulley_Lateral_image4.png
+   - lib/images/Low_Pulley_Lateral_image5.png
+   - lib/images/Upright_Rows_image1.png
+   - lib/images/Upright_Rows_image2.png
+   - lib/images/Upright_Rows_image3.png
+   - lib/images/Dumbbell_Rear_image1.png
+   - lib/images/Dumbbell_Rear_image2.png
+   - lib/images/Dumbbell_Rear_image3.png
+   - lib/images/Dumbbell_Rear_image4.png
+   - lib/images/Lateral_Raises_image1.png
+   - lib/images/Lateral_Raises_image2.png
+   - lib/images/Lateral_Raises_image3.png
+   - lib/images/Lateral_Raises_image4.png
+   - lib/images/Front_Raises_image1.png
+   - lib/images/Front_Raises_image2.png
+   - lib/images/Front_Raises_image3.png
+   - lib/images/Front_Raises_image4.png
+   - lib/images/icon1.jpg
+   - lib/images/icon2.jpg
+   - lib/images/icon3.jpg
+   - lib/images/icon4.jpg
+   - lib/images/icon5.jpg
+   - lib/images/icon6.jpg
+   - lib/images/icon7.jpg
+   - lib/images/icon8.jpg
+   - lib/images/icon9.jpg
+   - lib/images/icon10.jpg
+   - lib/images/icon11.jpg
+   - lib/images/icon12.jpg
+   - lib/images/icon13.jpg
+   - lib/images/icon14.jpg
+   - lib/images/icon15.jpg
+   - lib/images/icon16.jpg
+   - lib/images/icon17.png
+   - lib/images/icon18.png
+   - lib/images/icon19.png
+   - lib/images/icon20.png
+   - lib/images/icon21.png
+   - lib/images/icon22.png
+   - lib/images/icon23.png
+   - lib/images/icon24.png
+   - lib/images/icon25.png
+   - lib/images/icon26.png
+   - lib/images/icon27.png
+   - lib/images/icon28.png
+   - lib/images/icon29.png
+   - lib/images/icon30.png
+   - lib/images/icon31.png
+   - lib/images/icon32.png
+   - lib/images/icon33.png
+   - lib/images/icon34.png
+   - lib/images/icon35.png
+   - lib/images/icon36.png
+   - lib/images/icon37.png
+   - lib/images/icon38.png
+   - lib/images/icon39.png
+   - lib/images/icon40.jpg
+   - lib/images/icon41.jpg
+   - lib/images/icon42.png
+   - lib/images/icon43.png
+   - lib/images/icon44.png
+   - lib/images/icon45.png
+   - lib/images/icon46.png
+   - lib/images/icon47.png
+   - lib/images/icon48.png
+   - lib/images/icon49.png
+   - lib/images/icon50.png
+
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
